@@ -14,8 +14,8 @@ services:
     restart: always
     privileged: true
     resources:
-        limits:
-          memory: 3G
+      limits:
+        memory: '3G'
 
   grafana:
     container_name: grafana
