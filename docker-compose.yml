@@ -13,9 +13,10 @@ services:
       - 8086:8086
     restart: always
     privileged: true
-    resources:
-      limits:
-        memory: '3G'
+    deploy:
+      resources:
+        limits:
+          memory: '3G'
 
   grafana:
     container_name: grafana
